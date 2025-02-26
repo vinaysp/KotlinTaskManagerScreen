@@ -70,6 +70,6 @@ fun TaskCompleteCard(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     TaskManagerScreenKotlinTheme {
-        Greeting("Android")
+        TaskCompleteCard()
     }
 }
