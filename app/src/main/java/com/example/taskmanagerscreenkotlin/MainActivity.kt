@@ -31,8 +31,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TaskManagerScreenKotlinTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    TaskCompleteCard(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
