@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task Manager Screen Kotlin</string>
+    <string name="tasks_completed_text">All tasks completed</string>
+    <string name="additional_comments">Nice work!</string>
 </resources>
