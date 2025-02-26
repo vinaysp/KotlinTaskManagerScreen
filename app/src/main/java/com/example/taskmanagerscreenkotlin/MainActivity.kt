@@ -41,11 +41,29 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun TaskCompleteCard(modifier: Modifier = Modifier) {
+    val image = painterResource(R.drawable.ic_task_completed)
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .fillMaxHeight(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally) {
+        Image(
+            painter = image,
+            contentDescription = null
+        )
+        Text(
+            stringResource(id = R.string.tasks_completed_text),
+            modifier = Modifier
+                .padding(top = 24.dp, bottom = 8.dp),
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            stringResource(id = R.string.additional_comments),
+            fontSize = 16.sp
+        )
+    }
 }
 
 @Preview(showBackground = true)
